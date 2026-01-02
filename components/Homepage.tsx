@@ -10,6 +10,7 @@ const Homepage: React.FC<HomepageProps> = ({ onBookNow }) => {
     <div className="flex-1 overflow-y-auto bg-white dark:bg-slate-900 no-scrollbar">
       {/* Hero Section */}
       <section 
+        id="home"
         className="relative min-h-[600px] flex flex-col items-center justify-center p-8 text-center bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEOHf8MmSKLdh8yt782EHoNS8Tp_ukd_LsuyApHMpojHGN5uqdPt1sggl-qwBprV7OYY6C8-IqSb_WHYup546rrez-YAztgHtPNd8MRRVX7YN60_cT-Mt2dad9IpDhOL5n5twqMpJGADx17w8MzfF3Nr9QgocJhnOzZuCe8tsLH1asVOgK41KwrEaPUQ8D5xRcOLIFhfld46QSt8ZAg5UQqkoRAlaEPiJv-a3NCqYd4610g_Y3JkrS0nJhi9sIOyh3cus620s7vKw")`
@@ -70,7 +71,7 @@ const Homepage: React.FC<HomepageProps> = ({ onBookNow }) => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 px-6 md:px-12 bg-white dark:bg-slate-900">
+      <section id="about" className="py-24 px-6 md:px-12 bg-white dark:bg-slate-900">
         <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-1 w-full">
             <div 
@@ -125,7 +126,7 @@ const Homepage: React.FC<HomepageProps> = ({ onBookNow }) => {
       </section>
 
       {/* Expanded Footer */}
-      <footer className="bg-white dark:bg-slate-950 border-t border-[#f0f2f4] dark:border-slate-800 pt-20 pb-10 px-6">
+      <footer id="contact" className="bg-white dark:bg-slate-950 border-t border-[#f0f2f4] dark:border-slate-800 pt-20 pb-10 px-6">
         <div className="max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="flex flex-col gap-6">
